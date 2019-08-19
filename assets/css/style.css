@@ -47,6 +47,14 @@ h4 {
     margin: 0;
 }
 
+p {
+    /*margin: 0 0 10px;*/
+    margin-top: 20px;
+    margin-right:120px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -71,6 +79,13 @@ h4 {
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
+}
+
+.iframe {
+    font-size:20px;
+    margin:0 10px;
+    width:300;
+    height:350;
 }
 
 
