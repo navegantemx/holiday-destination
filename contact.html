@@ -20,7 +20,7 @@
     </script>
 </head>
 <body>
-    <header class="container-fluid">
+    <header class="container">
         <div class="row">
             <a href="index.html">
                 <div class="col-md-4 logo"></div>
@@ -42,7 +42,10 @@
             </div>
         </div>
     </header>
-    <section class="container-fluid ">
+    
+    <!--Contact Form-->
+    
+    <section class="container">
         <div class="row bg-color-contact">
             <div>
                 <h3 class="contact-heading uppercase text-center">Got a Trip in mind?</h3>
@@ -51,13 +54,20 @@
             <div class="center-form">
                 <form onsubmit="return sendMail(this);">
                     <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Enter email" required/>
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Trip Description" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Trip Request</button>
+                    <button type="submit" class="btn btn-primary center-block">Send Trip Request</button>
+                    <input type="reset" style="display:none;" id="reset-button" />
+                    <!--<input type="button" value="Submit" id="btnsubmit" onclick="submitForm()">-->
+                    <input type="button" name="reset_form" value="Reset Form" onclick="this.form.reset();">
                 </form>
             </div>
         </div>
     </section>
+    <br>
+    
+    <!--Footer-->
+    
     <footer class="container-fluid ">
         <div id="footer-details " class="row ">
             <div class="col-sm-4 ">
@@ -87,5 +97,6 @@
     <!-----------------------Emailjs Javascript------------>
     
     <script src="assets/js/sendEmail.js"></script>
+    
 </body>
 </html>

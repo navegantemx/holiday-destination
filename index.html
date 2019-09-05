@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <title>Holiday Destination - Mexico</title>
 </head>
 <body>
     
-    <!-----------------------Web site design idea taken from resume-project "Rosie Odenkirk" ------------>
-    <!-----------------------Web site design idea taken from www.touropia.com/best-places-to-visit-in-mexico/ ------------>
+    <!-----------------------Website navigation bar design idea taken from resume-project "Rosie Odenkirk" ------------>
+    <!-----------------------Website "Destinations" design idea taken from www.touropia.com/best-places-to-visit-in-mexico/ ------------>
     
     <!-----------------------Navigation Bar------------>
-    <header class="container-fluid">
+    <header class="container">
         <div class="row">
             <a href="index.html">
                 <div class="col-md-4 logo"></div>
@@ -38,63 +39,47 @@
             </div>
         </div>
     </header>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="section-heading uppercase">10 Best Places to Visit in Mexico</h3>
-            </div>
-        </div>>
-        
-        <!-----------------------Google Maps------------>
-        
-    <section class="container-fluid">
-        <div class="row row-table">
-            <div class="col-xs-12 col-sm-12 col-md-4 bg-color-maps section-column">
-                <div class="row"></div>
-                <div id="map"></div>
-            </div>
+    <section class="container">
+         <div class="container-fluid">
+             <div class="row">
+                 <div class="col">
+                     <h1 class="display-4">10 Best Places to Visit in Mexico</h1>
+                 </div>
+             </div>
+             
+             <!-----------------------Google Maps Search Box------------>
+             
+             <div class="row" mb-4">
+                 <div class="col">
+                     <input class=form-control" id="search" type="text" placeholder="search...">
+                 </div>
+             </div>
+         </div>
+         
+         <select id="touchsplashmenu" onchange="window.open(this.value,'_self');">
+             <option value="#">Choose your City</option>
+             <option value="https://en.wikipedia.org/wiki/Puebla_(city)">Puebla</option>
+             <option value="https://en.wikipedia.org/wiki/M%C3%A9rida,_Yucat%C3%A1n">Merida</option>
+             <option value="https://en.wikipedia.org/wiki/Taxco">Taxco</option>
+             <option value="https://en.wikipedia.org/wiki/Copper_Canyon">Copper Canyon</option>
+             <option value="https://en.wikipedia.org/wiki/Guanajuato_City">Guanajuato</option>
+             <option value="https://en.wikipedia.org/wiki/Oaxaca_City">Oaxaca</option>
+             <option value="https://en.wikipedia.org/wiki/Mexico_City">Mexico City</option>
+             <option value="https://en.wikipedia.org/wiki/Teotihuacan">Teotihuacan</option>
+             <option value="https://en.wikipedia.org/wiki/Canc%C3%BAn">Cancun</option>
+             <option value="https://en.wikipedia.org/wiki/Chichen_Itza">Chichen Itza</option>
+         </select>
+         
+            <div id="map"></div>
             
-        <!-----------------------Civilizations------------>
+            <!-----------------------Pie Chart from https://www.chartjs.org/------------>
             
-            <div class="col-xs-12 col-sm-12 col-md-8 bg-color-groups section-column">
-                <div class="row"></div>
-                <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="civilizations-icon fa fa-building" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-xs-10 col-sm-10">
-                                <h4 class="civilizations-heading uppercase">Home to some of the oldest civilizations of the Americas</h4>
-                                <img class="full img img--responsive portrait" src="https://img.huffingtonpost.com/asset/5b9e557d2600003300803aef.jpeg?ops=scalefit_960_noupscale&amp;format=webp" alt="" width="300" height="300">
-                                <div class="credit-container"><span class="credit">AP</span></div>
-                                <div class="caption-container">Mexico's first major civilization, the Olmecs, established themselves by around 1200 BC.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
-                        <div class="row">
-                            <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="civilizations-icon fa fa-users" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-xs-10 col-sm-10">
-                                <h4 class="civilizations-heading uppercase">It's not as violent as you may think</h4>
-                                <img class="full img img--responsive portrait" src="https://img.huffingtonpost.com/asset/5b9e557a1f00002c0021f73d.jpeg?ops=scalefit_960_noupscale&amp;format=webp" alt="" width="350" height="350">
-                                <div class="credit-container">
-                                    <span class="credit"><a href="http://www.flickr.com/" role="link" data-ylk="subsec:paragraph;itc:0;cpos:__RAPID_INDEX__;pos:__RAPID_SUBINDEX__;elm:context_link" data-rapid_p="8" data-v9y="1">Flickr</a>:<a href="http://www.flickr.com/photos/73543141@N00/8154927691" role="link" data-ylk="subsec:paragraph;itc:0;cpos:__RAPID_INDEX__;pos:__RAPID_SUBINDEX__;elm:context_link" data-rapid_p="9" data-v9y="1">Lee Edwin Coursey</a></span>
-                                </div>
-                                <div class="caption-container">Mexico's murder rate isn't particularly high by Latin American standards.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+                <canvas id="myChart"></canvas>
             </div>
-        </div>
-    </section>
     
     <!-----------------------Footer------------>
-    
+    <br>
     <footer class="container-fluid ">
         <div id="footer-details " class="row ">
             <div class="col-sm-4 ">
@@ -118,10 +103,11 @@
         </div>
     </footer>
     
-    <!-----------------------Google Maps Javascript------------>
-    
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+   <!-----------------------Google Maps Javascript------------>
+   
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap&libraries=places"></script>
     <script src="assets/js/maps.js"></script>
+    
 </body>
 </html>
+
