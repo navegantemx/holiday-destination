@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
     <title>Holiday Destination - Mexico</title>
 </head>
 <body>
     
-    <!-----------------------Website navigation bar design idea taken from resume-project "Rosie Odenkirk" ------------>
+    <!-----------------------Website main navigation bar design idea taken from resume-project Code Institute "Rosie Odenkirk" ------------>
     <!-----------------------Website "Destinations" design idea taken from www.touropia.com/best-places-to-visit-in-mexico/ ------------>
     
     <!-----------------------Navigation Bar------------>
@@ -25,27 +24,31 @@
             <div class="col-md-8">
                 <div class="row">
                     <ul id="nav" class="list-inline clearfix">
-                        <li class="col-xs-6 col-sm-4 ui-menu-color-home menuitem">
+                        <li class="col-xs-6 col-sm-3 ui-menu-color-home menuitem">
                             <a href="index.html" class="hvr-sweep-to-bottom"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
                         </li>
-                        <li class="col-xs-6 col-sm-4 ui-menu-color-destinations menuitem">
+                        <li class="col-xs-6 col-sm-3 ui-menu-color-destinations menuitem">
                             <a href="destinations.html" class="hvr-sweep-to-bottom"><i class="fa fa-plane" aria-hidden="true"></i><span>Destinations</span></a>
                         </li>
-                        <li class="col-xs-6 col-sm-4 ui-menu-color-contact menuitem">
-                            <a href="contact.html" class="hvr-sweep-to-bottom"><i class=" fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
+                        <li class="col-xs-6 col-sm-3 ui-menu-color-charts menuitem">
+                            <a href="charts.html" class="hvr-sweep-to-bottom"><i class="fa fa-pie-chart" aria-hidden="true"></i><span>Charts Statistics</span></a>
+                        </li>
+                        <li class="col-xs-6 col-sm-3 ui-menu-color-contact menuitem">
+                            <a href="contact.html" class="hvr-sweep-to-bottom"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>Contact</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </header>
+    <br>
     <section class="container">
-         <div class="container-fluid">
-             <div class="row">
-                 <div class="col">
-                     <h1 class="display-4">10 Best Places to Visit in Mexico</h1>
-                 </div>
-             </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="section-heading uppercase">10 Best Places to Visit in Mexico</h3>
+                </div>
+            </div>       
              
              <!-----------------------Google Maps Search Box------------>
              
@@ -54,33 +57,13 @@
                      <input class=form-control" id="search" type="text" placeholder="search...">
                  </div>
              </div>
-         </div>
-         
-         <select id="touchsplashmenu" onchange="window.open(this.value,'_self');">
-             <option value="#">Choose your City</option>
-             <option value="https://en.wikipedia.org/wiki/Puebla_(city)">Puebla</option>
-             <option value="https://en.wikipedia.org/wiki/M%C3%A9rida,_Yucat%C3%A1n">Merida</option>
-             <option value="https://en.wikipedia.org/wiki/Taxco">Taxco</option>
-             <option value="https://en.wikipedia.org/wiki/Copper_Canyon">Copper Canyon</option>
-             <option value="https://en.wikipedia.org/wiki/Guanajuato_City">Guanajuato</option>
-             <option value="https://en.wikipedia.org/wiki/Oaxaca_City">Oaxaca</option>
-             <option value="https://en.wikipedia.org/wiki/Mexico_City">Mexico City</option>
-             <option value="https://en.wikipedia.org/wiki/Teotihuacan">Teotihuacan</option>
-             <option value="https://en.wikipedia.org/wiki/Canc%C3%BAn">Cancun</option>
-             <option value="https://en.wikipedia.org/wiki/Chichen_Itza">Chichen Itza</option>
-         </select>
-         
-            <div id="map"></div>
-            
-            <!-----------------------Pie Chart from https://www.chartjs.org/------------>
-            
-            <div class="container">
-                <canvas id="myChart"></canvas>
-            </div>
-    
+        </div>
+        <br>
+        <div id="map"></div>
+    </section>
     <!-----------------------Footer------------>
     <br>
-    <footer class="container-fluid ">
+    <footer class="container">
         <div id="footer-details " class="row ">
             <div class="col-sm-4 ">
                 <h5 class="uppercase general-sub ">About</h5>

@@ -18,6 +18,10 @@
     background-color: #9b59b6;
 }
 
+.ui-menu-color-charts {
+    background-color: #06991e;
+}
+
 .ui-menu-color-contact {
     background-color: #3498db;
 }
@@ -25,12 +29,17 @@
 body {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    background-color: #FFF6EE;
+    background-color: #FFFFFF;
     color: #555555;
 }
 
 
 /*--------------------------------------------Special Paddings/Margins/Text*/
+
+.section-heading {
+    text-align: center;
+}
+
 
 h1,
 h2,
@@ -56,14 +65,6 @@ p {
     color: #fafafa;
 }
 
-.inline-block {
-    display: inline-block;
-}
-
-.row-table {
-    display: table;
-}
-
 /*--------------------------------------------Heading*/
 
 header {
@@ -85,7 +86,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 150px;
+    min-height: 125px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -138,6 +139,16 @@ header {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
+}
+
+
+.iframe {
+    font-family: "Roboto", sans-serif;
+    font-weight: 350;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #000000;
 }
 
 
