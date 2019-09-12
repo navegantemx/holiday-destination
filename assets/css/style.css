@@ -33,7 +33,6 @@ body {
     color: #555555;
 }
 
-
 /*--------------------------------------------Special Paddings/Margins/Text*/
 
 .section-heading {
@@ -48,13 +47,6 @@ h4 {
     margin: 0;
 }
 
-p {
-    margin-top: 20px;
-    margin-right:120px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -63,6 +55,8 @@ p {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
+    margin-left: 60px;
+    
 }
 
 /*--------------------------------------------Heading*/
@@ -163,25 +157,10 @@ header {
 /*--------------------------------------------Footer*/
 
 footer {
-    background-color: #525252;
+    background-color: #a728e0;
     color: #fafafa;
-    min-height: 120px;
+    min-height: 100px;
     margin: 0;
-}
-
-footer .cv-pdf i {
-    color: #fafafa;
-    text-align: center;
-    font-size: 18px;
-    padding-left: 5px;
-}
-
-footer .cv-pdf i:hover {
-    color: #e84610;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
 }
 
 .social-links {
@@ -206,6 +185,11 @@ footer .cv-pdf i:hover {
 
 .social-links li a i:hover {
     background: #e84610;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
 }
 
 #footer-details {
